@@ -27,6 +27,10 @@ const io = socket(server, {
   },
 });
 
+app.use('/', (req, res)=>{
+  res.send('connect your client to webSocket events.')
+})
+
 let peers = [];
 let groupCallRooms = [];
 
